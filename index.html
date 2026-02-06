@@ -1,11 +1,1517 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI Designer Portfolio</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Designer - Frontend developer - Design To Code Specialist</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --color-orange: #F06723;
+        --color-text: #CBD5E1;
+        --color-bg: #00041E;
+        --color-footerBg: #0F172A;
+        --color-blue: #0088FF;
+
+        --shadow-profilepic: 0 0px 0px 10px rgba(255, 255, 255, 0.25); 
+
+        --font-display: "Lato", sans-serif; 
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+<div class="container-lg w-full h-screen font-display text-text">
+    <div class="bg-[url(images/background-waves.png)] bg-cover">
+        <nav class="relative">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <!-- Mobile menu button-->
+                <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex shrink-0 items-center ">
+                <span class="text-orange font-black text-[24px] md:text-[32px] italic">VARA</span> 
+                <span class="text-gray-300 font-thin text-[24px] md:text-[32px] ml-2">PORTFOLIO</span>
+                </div>
+                
+            </div>
+            <div class="hidden sm:ml-6 sm:block  inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <div class="flex space-x-4">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                    <a href="#" aria-current="page" class=" px-3 py-2 text-sm font-medium text-white">About</a>
+                    <a href="#" class="px-3 py-2 text-sm font-medium text-gray-300  hover:text-white">Work</a>
+                    <a href="#" class="px-3 py-2 text-sm font-medium text-gray-300  hover:text-white">Resume</a>
+                    <a href="#" class="px-3 py-2 text-sm font-medium text-gray-300  hover:text-white">Contact</a>
+                </div>
+                </div>
+            <!-- <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            
+            </div> -->
+            </div>
+        </div>
+
+        <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+            <div class="space-y-1 px-2 pt-2 pb-3">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+            <a href="#" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">About</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Work</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Resume</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Contact</a>
+            </div>
+        </el-disclosure>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="relative mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 flex-column md:flex items-center justify-between">
+            
+            <div class="md:w-lg w-full">
+                <span class="text-2xl md:text-3xl font-bold text-white mb-1 block">Hello,</span>
+                <p class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1">I'm <span class="text-orange text-black">Vara Suravarapu</span></p>
+                <p class="text-[20px] sm:text-[26px] md:text-[32px] font-normal text-white">UI&UX Designer & Developer</p>
+                <p class="py-6">Crafting beautiful, functional digital experiences that blend design thinking with modern development.</p>
+
+                <p class="flex gap-4">
+                    <a href="#" class="bg-orange hover:bg-bg transition duration-300 ease-in-out p-2 md:p-3 px-4 md:px-6 rounded-lg text-white">HIRE ME</a> 
+                    <a href="#" class="border border-gray-800 hover:border-orange hover:text-orange transition duration-300 ease-in-out p-2 md:p-3 px-4 md:px-6 rounded-lg">DOWNLOAD RESUME</a>
+                </p>
+            </div>
+
+            <div class="mt-12 md:mt-auto md:w-lg w-full">
+                <div class="relative rounded-full">
+                    <img src="images/vara.png" class="rounded-full m-auto border-white border-[2px] p-6 w-[250px] h-[250px] md:w-[375px] md:h-[375px] bg-[#33364A] transition-transform duration-500  hover:scale-102 hover:rotate-15 ease-in-out">
+                    <div class="absolute right-10 lg:right-25 bottom-2 bg-[#CBD5E1] text-bg px-4 py-1 rounded-lg opacity-[.90]">
+                        <span class="block h-[16px] font-semibold">10 Years</span>
+                        <span class="text-xs h-[16px]">of experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute -left-15 bottom-20 -rotate-90 text-xs text-[#94A3B8] hidden lg:block">
+                <a href="#" class="flex items-center">
+                    <img src="images/down-arrow.png" alt="Scroll Down" class="rotate-90 mr-5 animate-bounce" />
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+            <div class="absolute -right-15 bottom-10 text-xs text-[#94A3B8] hidden lg:block">
+                <a href="https://www.linkedin.com/in/vara-prasad-suravarapu/" target="_blank" class="mb-1 block"> <img src="images/linkedin.png" alt="Linkedin Profile" title="Linkedin Profile" /></a>
+                <a href="https://www.behance.net/varaprasad12" target="_blank"><img src="images/behance.png" alt="Behance Profile" title="Behance Profile" /></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="bg-bg/98 w-full">
+        <div class="mx-auto max-w-screen-xl flex items-center px-8 lg:px-24">
+        <div class=" md:w-lg w-full hidden lg:block">
+            <img src="images/vara.png" class=" m-auto border-white p-6 w-[300px] h-[300px]  bg-[#33364A] transition-transform duration-500 transform scale-x-[-1] hover:rotate-10 ease-in-out">
+        </div>
+        <div class="w-full lg:ml-[24px] lg:ml-[64px] py-8 md:py-24">
+            <h2 class="text-[24px] font-bold mb-[24px] text-white">About Me</h2>
+            <p class="mb-[16px]">I'm a UI/UX designer and developer with a passion for creating intuitive, accessible digital experiences. With expertise spanning user research, interface design, and front-end development, I bridge the gap between design and code.<p>
+            <p class="mb-[16px]">
+            My approach combines empathy-driven design thinking with technical precision, ensuring that every project not only looks beautiful but functions flawlessly across all devices and user contexts.
+
+            </p>
+
+            <div class="flex flex-wrap gap-2 my-[32px]">
+                <span class="border border-[#CBD5E1]/40 p-2 px-5 rounded-lg text-xs mb-2 text-white ">UI DESIGN</span>
+                <span class="border border-[#CBD5E1]/40 p-2 px-5 rounded-lg text-xs mb-2 text-white ">PROTOTYPING</span>
+                <span class="border border-[#CBD5E1]/40 p-2 px-5 rounded-lg text-xs mb-2 text-white ">WIREFRAMING</span>
+                <span class="border border-[#CBD5E1]/40 p-2 px-5 rounded-lg text-xs mb-2 text-white ">DESIGN SYSTEM</span>
+                <span class="border border-[#CBD5E1]/40 p-2 px-5 rounded-lg text-xs mb-2 text-white ">ACCESSBILITY</span>
+                <span class="border border-[#CBD5E1]/40 p-2 px-5 rounded-lg text-xs mb-2 text-white ">HTML 5</span>
+                <span class="border border-[#CBD5E1]/40 p-2 px-5 rounded-lg text-xs mb-2 text-white ">CSS 3</span>
+                <span class="border border-[#CBD5E1]/40 p-2 px-5 rounded-lg text-xs mb-2 text-white ">TAILWIND</span>
+                <span class="border border-[#CBD5E1]/40 p-2 px-5 rounded-lg text-xs mb-2 text-white ">REACT JS</span>
+                <span class="border border-[#CBD5E1]/40 p-2 px-5 rounded-lg text-xs mb-2 text-white ">ES 6</span>
+                <span class="border border-[#CBD5E1]/40 p-2 px-5 rounded-lg text-xs mb-2 text-white ">GIT</span>
+            </div>
+
+            <div class="flex gap-4">
+                <a href="#" class="bg-orange hover:bg-bg transition duration-300 ease-in-out p-2 md:p-3 px-3 md:px-6 rounded-lg text-white">HIRE ME</a> 
+                <a href="#" class="border border-gray-800 hover:border-orange hover:text-orange transition duration-300 ease-in-out p-2 md:p-3 px-3 md:px-6 rounded-lg">DOWNLOAD RESUME</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Featured Work -->
+     <section class="py-[56px] md:py-[56px] lg:py-[72px] px-8 bg-bg">
+        <div class="m-auto max-w-5xl flex flex-col gap-6">
+            <h2 class="text-white text-center text-[24px] font-bold">Featured Work</h2>
+        </div>
+
+        <div class="max-w-5xl mx-auto mt-10">
+        <!-- Tabs -->
+            <!-- <div class="flex border-b border-gray-200">
+                <button
+                class="tab-btn px-4 py-2 text-sm font-medium
+                        border-b-2 border-blue-600 text-blue-600">
+                Overview
+                </button>
+                <button
+                class="tab-btn px-4 py-2 text-sm font-medium
+                        text-gray-500 hover:text-gray-700">
+                Features
+                </button>
+                <button
+                class="tab-btn px-4 py-2 text-sm font-medium
+                        text-gray-500 hover:text-gray-700">
+                Reviews
+                </button>
+            </div> -->
+
+            <!-- Pills -->
+             <div class="flex gap-4 justify-center mb-10">
+                <button class="tab-btn px-4 py-2 rounded-lg bg-orange hover:text-white text-sm cursor-pointer">
+                    All
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-lg hover:text-white text-sm hover:bg-orange cursor-pointer">
+                    Responsive Web
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-lg hover:text-white text-sm hover:bg-orange cursor-pointer">
+                    Custom CMS
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-lg hover:text-white text-sm hover:bg-orange cursor-pointer">
+                    Mobile App
+                </button>
+                <button class="tab-btn px-4 py-2 rounded-lg hover:text-white text-sm hover:bg-orange cursor-pointer">
+                    Design Systems
+                </button>
+            </div>
+
+
+            <!-- Content -->
+            <div class="pt-4">
+                <div class="tab-content">
+                    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Tab - Web Design -->
+                <div class="tab-content hidden">
+                    WEB DESIGN
+                    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Tab - Mobile App -->
+                <div class="tab-content hidden">
+                    MOBILE APP
+                    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Tab - Case Study -->
+                <div class="tab-content hidden">
+                    CASE STUDY
+                    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Tab - Design System -->
+                <div class="tab-content hidden">
+                    DESIGN SYSTEM
+                    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Card -->
+                        <div
+                            class="bg-footerBg rounded-lg
+                                overflow-hidden
+                                transition-all duration-300
+                                hover:shadow-xl hover:-translate-y-1">
+
+                            <!-- Image -->
+                            <img
+                            src="images/vara.png"
+                            alt="Card Image"
+                            class="w-full h-48 object-cover"
+                            />
+
+                            <!-- Content -->
+                            <div class="p-5">
+                            
+                            <!-- Title -->
+                            <h3 class="text-lg font-semibold text-white mb-2">
+                                UI Dashboard Design
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm mb-4 leading-relaxed">
+                                A modern and responsive dashboard UI designed with usability,
+                                accessibility, and scalability in mind.
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                UI Design
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Tailwind CSS
+                                </span>
+                                <span class="px-3 py-1 text-xs text-white font-medium rounded-lg
+                                            border border-[#CBD5E1]/40">
+                                Responsive
+                                </span>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section class="py-[56px] md:py-[56px] lg:py-[72px] px-8 bg-footerBg">
+        <div class="m-auto max-w-5xl flex flex-col gap-6">
+            <h2 class="text-white text-center text-[24px] font-bold">Skills & Expertise</h2>
+            <div class="flex flex-col md:flex-row gap-8 justify-between">
+                <div class="w-full">
+                    <h3 class="text-white font-bold mt-8">Design</h3>
+
+                    <div class="w-full my-6">
+                        <div class="flex justify-between mb-3 text-sm text-white/80">
+                            <span>UI Desing</span>
+                            <span>90%</span>
+                        </div>
+
+                        <div class="w-full bg-gray-600 rounded-full h-1">
+                            <div
+                            class="bg-blue h-1 rounded-full transition-all duration-500"
+                            style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full my-6">
+                        <div class="flex justify-between mb-3 text-sm text-white/80">
+                            <span>Prototyping</span>
+                            <span>95%</span>
+                        </div>
+
+                        <div class="w-full bg-gray-600 rounded-full h-1">
+                            <div
+                            class="bg-blue h-1 rounded-full transition-all duration-500"
+                            style="width: 95%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full my-6">
+                        <div class="flex justify-between mb-3 text-sm text-white/80">
+                            <span>Wireframing</span>
+                            <span>95%</span>
+                        </div>
+
+                        <div class="w-full bg-gray-600 rounded-full h-1">
+                            <div
+                            class="bg-blue h-1 rounded-full transition-all duration-500"
+                            style="width: 95%">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-full">
+                    <h3 class="text-white font-bold  mt-8">Development</h3>
+
+                    <div class="w-full my-6">
+                        <div class="flex justify-between mb-3 text-sm text-white/80">
+                            <span>React Js - Component Development</span>
+                            <span>90%</span>
+                        </div>
+
+                        <div class="w-full bg-gray-600 rounded-full h-1">
+                            <div
+                            class="bg-blue h-1 rounded-full transition-all duration-500"
+                            style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full my-6">
+                        <div class="flex justify-between mb-3 text-sm text-white/80">
+                            <span>ES 6</span>
+                            <span>70%</span>
+                        </div>
+
+                        <div class="w-full bg-gray-600 rounded-full h-1">
+                            <div
+                            class="bg-blue h-1 rounded-full transition-all duration-500"
+                            style="width: 70%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full my-6">
+                        <div class="flex justify-between mb-3 text-sm text-white/80">
+                            <span>HTML 5</span>
+                            <span>95%</span>
+                        </div>
+
+                        <div class="w-full bg-gray-600 rounded-full h-1">
+                            <div
+                            class="bg-blue h-1 rounded-full transition-all duration-500"
+                            style="width: 95%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full my-6">
+                        <div class="flex justify-between mb-3 text-sm text-white/80">
+                            <span>CSS</span>
+                            <span>90%</span>
+                        </div>
+
+                        <div class="w-full bg-gray-600 rounded-full h-1">
+                            <div
+                            class="bg-blue h-1 rounded-full transition-all duration-500"
+                            style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full my-6">
+                        <div class="flex justify-between mb-3 text-sm text-white/80">
+                            <span>Tailwind CSS</span>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="w-full bg-gray-600 rounded-full h-1">
+                            <div
+                            class="bg-blue h-1 rounded-full transition-all duration-500"
+                            style="width: 80%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full my-6">
+                        <div class="flex justify-between mb-3 text-sm text-white/80">
+                            <span>Bootstrap CSS</span>
+                            <span>90%</span>
+                        </div>
+
+                        <div class="w-full bg-gray-600 rounded-full h-1">
+                            <div
+                            class="bg-blue h-1 rounded-full transition-all duration-500"
+                            style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="w-full">
+                    <h3 class="text-white font-bold  mt-8">Tools</h3>
+
+                    <div class="w-full my-6">
+                        <div class="flex justify-between mb-3 text-sm text-white/80">
+                            <span>Figma</span>
+                            <span>85%</span>
+                        </div>
+
+                        <div class="w-full bg-gray-600 rounded-full h-1">
+                            <div
+                            class="bg-blue h-1 rounded-full transition-all duration-500"
+                            style="width: 85%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full my-6">
+                        <div class="flex justify-between mb-3 text-sm text-white/80">
+                            <span>Adobe XD</span>
+                            <span>85%</span>
+                        </div>
+
+                        <div class="w-full bg-gray-600 rounded-full h-1">
+                            <div
+                            class="bg-blue h-1 rounded-full transition-all duration-500"
+                            style="width: 85%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full my-6">
+                        <div class="flex justify-between mb-3 text-sm text-white/80">
+                            <span>Photoshop</span>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="w-full bg-gray-600 rounded-full h-1">
+                            <div
+                            class="bg-blue h-1 rounded-full transition-all duration-500"
+                            style="width: 80%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full my-6">
+                        <div class="flex justify-between mb-3 text-sm text-white/80">
+                            <span>Git</span>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="w-full bg-gray-600 rounded-full h-1">
+                            <div
+                            class="bg-blue h-1 rounded-full transition-all duration-500"
+                            style="width: 80%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full my-6">
+                        <div class="flex justify-between mb-3 text-sm text-white/80">
+                            <span>Jira</span>
+                            <span>70%</span>
+                        </div>
+
+                        <div class="w-full bg-gray-600 rounded-full h-1">
+                            <div
+                            class="bg-blue h-1 rounded-full transition-all duration-500"
+                            style="width: 70%">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="py-[56px] md:py-[56px] lg:py-[72px] px-8 bg-bg">
+        <div class="m-auto max-w-3xl text-center flex flex-col gap-6">
+            <h2 class="text-white text-[24px] font-bold">Resume</h2>
+            <a href="#" class="m-auto w-[240px] bg-orange hover:bg-bg transition duration-300 ease-in-out p-2 md:p-3 px-3 md:px-6 rounded-lg text-white">DOWNLOAD RESUME</a> 
+        </div>
+        <div class="mx-auto max-w-5xl flex flex-col md:flex-row justify-between gap-10 mt-12">
+            <div class="w-full">
+                <h3 class="flex items-center gap-3 text-[24px] font-bold mb-8 text-white"><img src="images/experience.png" alt="Experience" />Experience</h3>
+
+                <div class="pb-8 mb-6 border-b-1 border-white/10">
+                    <h4 class="text-xl text-white">Senior UI/UX Designer</h4>
+                    <span class="text-blue text-base">Parabola</span>
+                    <p class="text-base">2021 - Present</p>
+                    <p class="text-base mt-6 font-normal">Leading design initiatives for enterprise SaaS products, managing design systems, and mentoring junior designers.</p>
+                </div>
+
+                <div class="pb-8 mb-6 border-b-1 border-white/10">
+                    <h4 class="text-xl text-white">Senior UI/UX Designer</h4>
+                    <span class="text-blue text-base">Parabola</span>
+                    <p class="text-base">2021 - Present</p>
+                    <p class="text-base mt-6 font-normal">Leading design initiatives for enterprise SaaS products, managing design systems, and mentoring junior designers.</p>
+                </div>
+
+                <div class="pb-8 mb-6 border-b-1 border-white/10">
+                    <h4 class="text-xl text-white">Senior UI/UX Designer</h4>
+                    <span class="text-blue text-base">Parabola</span>
+                    <p class="text-base">2021 - Present</p>
+                    <p class="text-base mt-6 font-normal">Leading design initiatives for enterprise SaaS products, managing design systems, and mentoring junior designers.</p>
+                </div>
+
+                <div class="pb-8 mb-6 border-b-0 border-white/10">
+                    <h4 class="text-xl text-white">Senior UI/UX Designer</h4>
+                    <span class="text-blue text-base">Parabola</span>
+                    <p class="text-base">2021 - Present</p>
+                    <p class="text-base mt-6 font-normal">Leading design initiatives for enterprise SaaS products, managing design systems, and mentoring junior designers.</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <h3 class="flex items-center gap-3 text-[24px] font-bold mb-8 text-white"><img src="images/education.png" alt="Education" />Education</h3>
+
+                <div class="pb-8 mb-6 border-b-1 border-white/10">
+                    <h4 class="text-xl text-white">Senior UI/UX Designer</h4>
+                    <span class="text-blue text-base">Parabola</span>
+                    <p class="text-base">2021 - Present</p>
+                    <p class="text-base mt-6 font-normal">Leading design initiatives for enterprise SaaS products, managing design systems, and mentoring junior designers.</p>
+                </div>
+
+                <div class="pb-8 mb-6 border-b-1 border-white/10">
+                    <h4 class="text-xl text-white">Senior UI/UX Designer</h4>
+                    <span class="text-blue text-base">Parabola</span>
+                    <p class="text-base">2021 - Present</p>
+                    <p class="text-base mt-6 font-normal">Leading design initiatives for enterprise SaaS products, managing design systems, and mentoring junior designers.</p>
+                </div>
+
+                <div class="pb-8 mb-6 border-b-1 border-white/10">
+                    <h4 class="text-xl text-white">Senior UI/UX Designer</h4>
+                    <span class="text-blue text-base">Parabola</span>
+                    <p class="text-base">2021 - Present</p>
+                    <p class="text-base mt-6 font-normal">Leading design initiatives for enterprise SaaS products, managing design systems, and mentoring junior designers.</p>
+                </div>
+
+                <div class="pb-8 mb-6 border-b-0 border-white/10">
+                    <h4 class="text-xl text-white">Senior UI/UX Designer</h4>
+                    <span class="text-blue text-base">Parabola</span>
+                    <p class="text-base">2021 - Present</p>
+                    <p class="text-base mt-6 font-normal">Leading design initiatives for enterprise SaaS products, managing design systems, and mentoring junior designers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-[56px] md:py-[72px] px-8 bg-footerBg">
+        <div class="m-auto max-w-3xl text-center flex flex-col gap-6">
+            <h2 class="text-white text-[24px] font-bold">Get In Touch</h2>
+            <p class="text-[14px] md:text-[18px] font-light">I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+
+            <div class="flex flex-col md:flex-row items-center justify-between mt-8 gap-8">
+                <div class="flex flex-col gap-6">
+                    <div class="text-start">
+                        <a href="mailto:prasadnti@gmail.com" class="text-blue flex gap-3">
+                            <img src="images/email.png" alt="Email" title="Linkedin Profile" />prasadnti@gmail.com</a>
+                        </div>
+                    <div class="text-start ">
+                        <a href="tel:+919676739333" class="flex gap-3 text-[20px] text-white">
+                            <img src="images/phone.png" alt="Email" title="Linkedin Profile" />+91 9676 739 333</a>
+                        </div>
+                </div>
+                <div  class="flex flex-col gap-6">
+                    <div>
+                        <a href="https://www.linkedin.com/in/vara-prasad-suravarapu/" target="_blank" class="text-blue flex items-center justify-center gap-3"> <img src="images/linkedin-big.png" alt="Linkedin Profile" title="Linkedin Profile" /> <span>Linkedin Profile</span></a>
+                    </div>
+                    <div><a href="https://www.behance.net/varaprasad12" target="_blank" class="text-blue flex items-center justify-center gap-3"><img src="images/behancebig.png" alt="Behance Profile" title="Behance Profile" />Behance Profile</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll(".tab-btn");
+  const contents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("bg-orange"));
+      contents.forEach(c => c.classList.add("hidden"));
+
+      tab.classList.add("bg-orange", "text-white");
+      contents[index].classList.remove("hidden");
+    });
+  });
+</script>
+
+  </body>
 </html>
